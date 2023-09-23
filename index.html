@@ -6,56 +6,59 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
-     <div class="container">
-        <nav>
-            <div>
-                <div><a href="./class.html">Мастер-классы</a></div>
-                <div><a href="./master.html">Мебель на заказ</a></div>
-            </div>
-            <a href="#"><div class="logo"><img src="./images/IMG_1024 1.svg" alt="logo"></div></a>
-            <div>
-                <div><a href="#">Контакты</a></div>
-                <div><a href="./about.html">О нас</a></div>
-            </div>
-        </nav>
-     </div>
+    <header class="header">
+        <div class="container">
+           <nav class="navigate">
+               <ul class="navigate-item">
+                <li class="navigate-item__link1"><a href="./class.html">Мастер-классы</a></li>
+               <li><a href="./master.html">Мебель на заказ</a></li>
+               </ul>              
+               <a href="#"><div class="logo"><img src="./images/IMG_1024 1.svg" alt="logo"></div></a>
+               <ul class="navigate-item">
+                <li><a href="#">Контакты</a></li>
+               <li class="navigate-item__link4"><a href="./about.html">О нас</a></li>
+               </ul>                 
+           </nav>
+        </div>
     </header>
 
-    <hr> <!--use border -->
     <section class="top">
         <div class="container">
-            <div class="top__inner">
+            <div id="tt" class="top__inner">
                 <div class="top-img"><img src="./images/IMG_6431 1.jpg" alt="img"></div>
                 <div class="top-info">
                     <div class="top-info__subtable">Столярная мастерская NIKASON BRAND
                     </div>
                     <h1 class="top-info__title">Изготовление и реставрация мебели</h1>
                     <div class="top-info__descr"><p>Авторская мебель ручной работы, сделанная с душой и трепетом.</p></div>
-                    <button class="top-info__button">Смотреть услуги</button>
+                    <div class="ttob"><button class="top-info__button">Смотреть услуги</button></div>
                     <div class="top-info__link">
-                            <a href="#"><img src="./images/tg.svg" alt="tg"></a>
-                            <a href="#"><img src="./images/inst.svg" alt="inst"></a>
-                            <a href="#"><img src="./images/wh.svg" alt="wh"></a>
+                            <a href="#"><img src="./images/tg.png" alt="tg"></a>
+                            <a href="#"><img src="./images/inst.png" alt="inst"></a>
+                            <a href="#"><img src="./images/wh.png" alt="wh"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 
     <section class="overview">
         <div class="container">
             <div class="overview__info">
                 <h2>NIKASON BRAND это</h2>
                 <div class="overview-info__text">
-                    <div><p>Производство авторской мебели из массива</p></div>
-                    <div><p>Реставрация, редизайн, ремонт деревянной мебели</p></div>
-                    <div><p>Производство мебели по индивидуальным размерам
-                    </p></div>
+                    <p class="overview-info__text item">Производство авторской <br>мебели из массива</p>
+                    <p class="overview-info__text item">Реставрация, редизайн, ремонт деревянной мебели</p>
+                    <p class="overview-info__text item">Производство мебели по индивидуальным размерам</p>
                 </div>
             </div>
          <div class="overview__table">

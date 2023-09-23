@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./about/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-           <nav>
-               <div>
-                   <div><a href="./class.html">Мастер-классы</a></div>
-                   <div><a href="./master.html">Мебель на заказ</a></div>
-               </div>
+           <nav class="navigate">
+               <ul class="navigate-item">
+                <li class="navigate-item__link1"><a href="./class.html">Мастер-классы</a></li>
+               <li><a href="./master.html">Мебель на заказ</a></li>
+               </ul>              
                <a href="./index.html"><div class="logo"><img src="./images/IMG_1024 1.svg" alt="logo"></div></a>
-               <div>
-                   <div><a href="#">Контакты</a></div>
-                   <div><a href="#">О нас</a></div>
-               </div>
+               <ul class="navigate-item">
+                <li><a href="#">Контакты</a></li>
+               <li class="navigate-item__link4"><a href="#">О нас</a></li>
+               </ul>                 
            </nav>
         </div>
-       </header>
+    </header>
 
        <section class="top">
             <div class="container">
                 <div class="top__title">
-                    <h1>История создания мастерской</h1>
-                    <h1>NIKASON BRAND</h1>
+                    <div class="top-title__header">
+                        <h1>История создания мастерской</h1>
+                        <h1>NIKASON BRAND</h1>
+                    </div>
                     <div class="top__img">
                         <img src="./about/images/Rectangle 83.jpg" alt="">
                     </div>
@@ -63,63 +71,72 @@
                     <img src="./about/images/IMG_4420 1.jpg" alt="">
                 </div>
                 <div class="bio-info__descr">
-                    <p>Никита Колодезников-Матчитов</p>
-                    <p>Основатель мастерской</p>
-                    <p>С детства я был окружен творческими людьми, мой дедушка был строителем и мастером по дереву. 
-                        Спустя много лет и мне передалась его любовь к дереву - в свободное время мастерил для себя 
-                        небольшие  изделия из древесины.
-                        Более десяти лет назад построил двухэтажный гараж, на втором этаже расположилась наша мастерская.
-                         Начинал производство практически “с нуля”, с каждой зарплаты понемногу откладывал на покупку инстурментов и станков. 
-                        
-                        Постепенно начали появляться первые заказы. Несколько лет назад
-                         мы с супругой решили еще заняться ремонтом и реставрацией мебели. Эту идею предложили сами клиенты,
-                          поскольку периодически приходили с таким запросом. В основном, реставрацией занимается супруга Саргылана.
-                           Мы с ней одна сплоченная, дружная и отличная команда.  </p>
+                    <p class="bio-info__title">Никита Колодезников-Матчитов</p>
+                    <p class="bio-info__proff">Основатель мастерской</p>
+                    <div class="bio-info__text">
+                        <p>С детства я был окружен творческими людьми, мой дедушка был строителем и мастером по дереву. 
+                            Спустя много лет и мне передалась его любовь к дереву - в свободное время мастерил для себя 
+                            небольшие  изделия из древесины.</p>
+                            <p>Более десяти лет назад построил двухэтажный гараж, на втором этаже расположилась наша мастерская.
+                                Начинал производство практически “с нуля”, с каждой зарплаты понемногу откладывал на покупку инстурментов и станков.</p> 
+                            <p>Постепенно начали появляться первые заказы. Несколько лет назад
+                             мы с супругой решили еще заняться ремонтом и реставрацией мебели. Эту идею предложили сами клиенты,
+                              поскольку периодически приходили с таким запросом. В основном, реставрацией занимается супруга Саргылана.
+                               Мы с ней одна сплоченная, дружная и отличная команда. </p>
+                    </div>  
                 </div>
             </div>
-            <div>
+            <div class="express">
                 <h1>Философия мастерской NIKASON</h1>
-                <q>Создавать что-то по-настоящему ценное и уникальное. Дарить радость и уют в каждый дом</q>
+                <div class="express__statement">
+                    <q>Создавать что-то по-настоящему ценное и уникальное.<br> Дарить радость и уют в каждый дом</q>
+                </div>
             </div>
         </div>
        </section>
 
        <section class="cnn">
         <div class="container">
-            <h1>СМИ о нас</h1>
-            <p>О нашей мастерской пишут многие издания Якутии</p>
-            <div class="cnn__images">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="cnn__items">
+                <h1 class="cnn-items__head">СМИ о нас</h1>
+                <p>О нашей мастерской пишут многие издания Якутии</p>
+                <div class="cnn-items__images">
+                    
+                    <img src="./about/images/IMG_5597 1.jpg" alt="image">
+                    <img src="./about/images/IMG_5605 1.jpg" alt="image">
+                    <img src="./about/images/IMG_5604 1.jpg" alt="image">
+                    <img src="./about/images/IMG_5624 1.jpg" alt="image">
+                </div>
+                    <h1>Оставьте заявку и мы с вами свяжемся</h1>
+                    <button class="cnn__button"><p>Оставить заявку</p></button>
             </div>
-            <h1>Оставьте заявку и мы с вами свяжемся</h1>
-            <button class="cnn__button">Оставить заявку</button>
+            
         </div>
        </section>
+
        <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <div>
-                    <small>ИП Колодезников-Матчитов Н.И.
-                    ИНН 143515646663</small></div>
-                <div>
-                    <a href="#">Мастер-классы</a>
-                    <a href="#">Мебель на заказ</a>
-                </div>
-                <div>
-                    <a href="#">Контакты</a>
-                    <a href="#">О нас</a>
-                </div>
-                <div>
-                    <a href="#">Политика кофиденциальности</a>
-                    <a href="#">Договор оферты</a>
-                </div>
+                <p>
+                    ИП Колодезников-Матчитов Н.И.<br>
+                           ИНН 143515646663
+                </p>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Мастер-классы</a></li>
+                    <li><a href="#">Мебель на заказ</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Политика кофиденциальности</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
                 <div class="footer-inner__link">
-                    <a href="#"><img src="./images/tg.svg" alt="tg"></a>
-                            <a href="#"><img src="./images/inst.svg" alt="inst"></a>
-                            <a href="#"><img src="./images/wh.svg" alt="wh"></a>
+                            <a href="#"><img src="./images/ins.png" alt="inst"></a>
+                            <a href="#"><img src="./images/wh.png" alt="wh"></a>
+                            <p>+7 967 927-22-27</p>
                 </div>
             </div>
         </div>
