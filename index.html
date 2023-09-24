@@ -56,9 +56,9 @@
             <div class="overview__info">
                 <h2>NIKASON BRAND это</h2>
                 <div class="overview-info__text">
-                    <p class="overview-info__text item">Производство авторской <br>мебели из массива</p>
-                    <p class="overview-info__text item">Реставрация, редизайн, ремонт деревянной мебели</p>
-                    <p class="overview-info__text item">Производство мебели по индивидуальным размерам</p>
+                    <div class="overview-info__text line"><p class="overview-info__text item">Производство авторской <br>мебели из массива</p></div>
+                    <div class="overview-info__text line"><p class="overview-info__text item">Реставрация, редизайн, ремонт деревянной мебели</p></div>
+                    <div class="overview-info__text line"><p class="overview-info__text item">Производство мебели по индивидуальным размерам</p></div>
                 </div>
             </div>
          <div class="overview__table">
@@ -103,23 +103,23 @@
                 </tr>
                 </tbody>
             </table>
-         </div>
+        </div>
          <div class="overview-family">
             <h2>NIKASON BRAND <span>это семейная мастеркая</span></h2>
             <div class="overview-family__items">
                 <div class="items__img"><img src="./images/Recta.jpg" alt="img"></div>
                 <div class="items__descr">
-                    <div>Саргылана и Никита Колодезниковы-Матчитовы</div>
-                    <p>Саргылана - рестовратор-декоратор, преображает и дарит вторую жизнь старой мебели.
+                    <h3>Саргылана и Никита Колодезниковы-Матчитовы</h3>
+                    <p>Саргылана - рестовратор-декоратор, преображает и дарит вторую жизнь старой мебели.</p>
 
-                        Никита - мастер по дереву, вся мебель делается его умелыми руками.</p>
-                    <button class="">Подробнее о нас</button>    
+                        <p>Никита - мастер по дереву, вся мебель делается его умелыми руками.</p>
+                    <button class="overview-family__button">Подробнее о нас</button>    
                 </div>
             </div>
          </div>
          <div class="overview-video">
                 <h2>Посмотрите видео о нас</h2>
-                <video></video>
+                <video width="1160" height="700" controls="controls"></video>
          </div>
          </div>
     </section>
@@ -128,32 +128,38 @@
         <div class="container">
             <h2 class="title">Наши услуги</h2>
             <div class="price-items">
-                <div class="price-item__img">
-                    <img src="./images/IMG_5907.jpg" alt="мебель">
+                <div class="price-items__box">
+                    <div class="price-item__img">
+                        <img src="./images/IMG_5907.jpg" alt="мебель">
+                    </div>
+                    <div class="price-item__descr">
+                        <h3>Мебель на заказ</h3>
+                        <p>Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий.<br> 
+                            Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
+                        <button class="price-item__button">Заказать мебель</button>
+                    </div>
                 </div>
-                <div class="price-item__descr">
-                    <div>Мебель на заказ</div>
-                    <p>Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий. 
-                        Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
-                    <button class="price-item__button">Заказать мебель</button>
-                </div>
-                <div class="price-item__img">
-                    <img src="./images/IMG_5645.jpg" alt="мебель">
-                </div>
-                <div class="price-item__descr">
-                    <div>Мастер-классы</div>
-                    <p>Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит? 
-                        Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.
-                        </p>
-                    <button class="price-item__button">Купить мастер-класс</button>
+                <div class="price-items__box">
+                    <div class="price-item__img">
+                        <img src="./images/IMG_5645.jpg" alt="мебель">
+                    </div>
+                    <div class="price-item__desc">
+                        <h3>Мастер-классы</h3>
+                        <p>Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит?<br> 
+                            Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.
+                            </p>
+                        <button class="price-item__button">Купить мастер-класс</button>
+                    </div>
                 </div>
             </div>
             <div class="price-garant">
                 <div class="price-garant__border">
-                    <div class="price-garant__inner">
-                        <h2>Гарантия качества мебели от NIKASON BRAND</h2>
-                        <p>На каждое изделие ставим авторский логотип (клеймо) как знак качества и узнаваемости мастера. Таким образом мастер несёт ответственность за каждое изделие помеченное печатью. Есть гарантия на 12 месяцев. </p>
-                        <div class="price-garant__logo"><img src="./images/IMG_1024 1.svg"></div>
+                    <div class="price-garant__border inner">
+                        <div class="price-garant__inner">
+                            <h2>Гарантия качества мебели<br> от NIKASON BRAND</h2>
+                            <p>На каждое изделие ставим авторский логотип (клеймо) как знак качества и узнаваемости мастера. Таким образом мастер несёт ответственность за каждое изделие помеченное печатью. Есть гарантия на 12 месяцев. </p>
+                            <div class="price-garant__logo"><img src="./images/logo.png"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,25 +168,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <div>
-                    <small>ИП Колодезников-Матчитов Н.И.
-                    ИНН 143515646663</small></div>
-                <div>
-                    <a href="#">Мастер-классы</a>
-                    <a href="#">Мебель на заказ</a>
-                </div>
-                <div>
-                    <a href="#">Контакты</a>
-                    <a href="#">О нас</a>
-                </div>
-                <div>
-                    <a href="#">Политика кофиденциальности</a>
-                    <a href="#">Договор оферты</a>
-                </div>
+                <p>
+                    ИП Колодезников-Матчитов Н.И.<br>
+                           ИНН 143515646663
+                </p>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Мастер-классы</a></li>
+                    <li><a href="#">Мебель на заказ</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Политика кофиденциальности</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
                 <div class="footer-inner__link">
-                    <a href="#"><img src="./images/tg.svg" alt="tg"></a>
-                            <a href="#"><img src="./images/inst.svg" alt="inst"></a>
-                            <a href="#"><img src="./images/wh.svg" alt="wh"></a>
+                            <a href="#"><img src="./images/ins.png" alt="inst"></a>
+                            <a href="#"><img src="./images/wh.png" alt="wh"></a>
                 </div>
             </div>
         </div>
