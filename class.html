@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./class/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-           <nav>
-               <div>
-                   <div><a href="#">Мастер-классы</a></div>
-                   <div><a href="./master.html">Мебель на заказ</a></div>
-               </div>
+           <nav class="navigate">
+               <ul class="navigate-item">
+                <li class="navigate-item__link1"><a href="#">Мастер-классы</a></li>
+               <li><a href="./master.html">Мебель на заказ</a></li>
+               </ul>              
                <a href="./index.html"><div class="logo"><img src="./images/IMG_1024 1.svg" alt="logo"></div></a>
-               <div>
-                   <div><a href="#">Контакты</a></div>
-                   <div><a href="./about.html">О нас</a></div>
-               </div>
+               <ul class="navigate-item">
+                <li><a href="#">Контакты</a></li>
+               <li class="navigate-item__link4"><a href="./about.html">О нас</a></li>
+               </ul>                 
            </nav>
         </div>
     </header>
@@ -37,35 +43,36 @@
         <div class="container">
             <h1>Наши работы</h1>
             <div class="content__box">
-                <div>
+            <div class="content-box__items">
+                <div class="content-box__items item">
                     <img src="./class/images/before1.jpg" alt="images">
                     <figcaption>До</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/after1.jpg" alt="images">
                     <figcaption>После</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/before2.jpg" alt="images">
                     <figcaption>До</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/after2.jpg" alt="images">
                     <figcaption>После</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/before3.jpg" alt="images">
                     <figcaption>До</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/after3.jpg" alt="images">
                     <figcaption>После</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/before4.jpg" alt="images">
                     <figcaption>До</figcaption>
                 </div>
-                <div>
+                <div class="content-box__items item">
                     <img src="./class/images/after4.jpg" alt="images">
                     <figcaption>После</figcaption>
                 </div>
@@ -73,22 +80,45 @@
             <button class="content__button">
                 Смотреть больше примеров
             </button>
+            </div>
         </div>
     </section>
 
     <section class="list">
         <div class="container">
             <h1>Какие техники изучите на МК</h1>
-            <div class="list__box">
-                <ol>
-                    <li>Снятие старой краски</li>
-                    <li>Устранение царапин и мелких дефектов</li>
-                    <li>Ремонт маленьких и  больших сколов</li>
-                    <li>Ремонт поломанной и расклеившейся мебели</li>
-                    <li>Замена старых поврежденных деталей</li>
-                    <li>Приемы и идеи декора. Улучшение дизайна старой мебели</li>
-                    <li>Покраска изделия</li>
-                </ol>
+            <div class="list-info">
+                <ul class="list-info__block">
+                    <div class="line"></div>
+                    <li class="circle-item">
+                        <div class="circle">1</div>
+                        <h4>Снятие старой краски</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">2</div>
+                        <h4>Устранение царапин и мелких дефектов</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">3</div>
+                        <h4>Ремонт маленьких и  больших сколов</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">4</div>
+                        <h4>Ремонт поломанной и расклеившейся мебели</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">5</div>
+                        <h4>Замена старых поврежденных деталей</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">6</div>
+                        <h4>Приемы и идеи декора. Улучшение дизайна старой мебели</h4>
+                    </li>
+                    <li class="circle-item">
+                        <div class="circle">7</div>
+                        <h4>Покраска изделия</h4>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -103,40 +133,44 @@
 
     <section class="list-images">
         <div class="container">
-            <div class="list-images__box">
-                <div>
-                    <img src="./class/images/fi.png" alt="images">
-                    <figcaption>Буфет</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/tw.png" alt="images">
-                    <figcaption>Сундук</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/th.png" alt="images">
-                    <figcaption>Комод</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/fo.png" alt="images">
-                    <figcaption>Советское кресло</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/fiv.png" alt="images">
-                    <figcaption>Стол</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/si.png" alt="images">
-                    <figcaption>Стул</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/se.png" alt="images">
-                    <figcaption>Обивка стула</figcaption>
-                </div>
-                <div>
-                    <img src="./class/images/ei.png" alt="images">
-                    <figcaption>Ремонт стула</figcaption>
+            <h1>Мастер-классы по реставрации мебели</h1>
+            <div class="main-box">
+                <div class="list-images__box">
+                    <div class="list-images__box items">
+                        <img src="./class/images/fi.png" width="240" alt="images">
+                        <figcaption>Буфет</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/tw.png" width="240" alt="images">
+                        <figcaption>Сундук</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/th.png" alt="images">
+                        <figcaption>Комод</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/fo.png" alt="images">
+                        <figcaption>Советское кресло</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/fiv.png" alt="images">
+                        <figcaption>Стол</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/si.png" alt="images">
+                        <figcaption>Стул</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/se.png" alt="images">
+                        <figcaption>Обивка стула</figcaption>
+                    </div>
+                    <div class="list-images__box items">
+                        <img src="./class/images/ei.png" alt="images">
+                        <figcaption>Ремонт стула</figcaption>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -177,25 +211,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <div>
-                    <small>ИП Колодезников-Матчитов Н.И.
-                    ИНН 143515646663</small></div>
-                <div>
-                    <a href="#">Мастер-классы</a>
-                    <a href="#">Мебель на заказ</a>
-                </div>
-                <div>
-                    <a href="#">Контакты</a>
-                    <a href="#">О нас</a>
-                </div>
-                <div>
-                    <a href="#">Политика кофиденциальности</a>
-                    <a href="#">Договор оферты</a>
-                </div>
+                <p>
+                    ИП Колодезников-Матчитов Н.И.<br>
+                           ИНН 143515646663
+                </p>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Мастер-классы</a></li>
+                    <li><a href="#">Мебель на заказ</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer-inner__items">
+                    <li><a href="#">Политика кофиденциальности</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
                 <div class="footer-inner__link">
-                    <a href="#"><img src="./images/tg.svg" alt="tg"></a>
-                            <a href="#"><img src="./images/inst.svg" alt="inst"></a>
-                            <a href="#"><img src="./images/wh.svg" alt="wh"></a>
+                            <a href="#"><img src="./images/ins.png" alt="inst"></a>
+                            <a href="#"><img src="./images/wh.png" alt="wh"></a>
                 </div>
             </div>
         </div>
