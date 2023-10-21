@@ -24,21 +24,16 @@ function addPadding(str, minLength, padding) {
   }
 
   let paddingCount = Math.ceil((minLength - str.length) / padding.length);
+  let pad = padding.repeat(paddingCount).slice(0, minLength - str.length);
 
-  let paddedString = padding.repeat(paddingCount) + str;
-
-  if (paddedString.length > minLength) {
-    paddedString = paddedString.slice(paddedString.length - minLength);
-  }
-
-  return paddedString;
+  return pad + str;
 }
 
-console.log(addPadding("1", 2, "0"));
-console.log(addPadding("1", 4, "0"));
-console.log(addPadding("q", 4, "werty"));
-console.log(addPadding("q", 4, "we"));
-console.log(addPadding("qwerty", 4, "0"));
+console.log(addPadding("1", 2, "0")); // Выведет '01'
+console.log(addPadding("1", 4, "0")); // Выведет '0001'
+console.log(addPadding("q", 4, "werty")); // Выведет 'werq'
+console.log(addPadding("q", 4, "we")); // Выведет 'wweq'
+console.log(addPadding("qwerty", 4, "0")); // Выведет 'qwerty'
 
 function checkStringLength(str, maxLength) {
   return str.length <= maxLength;
