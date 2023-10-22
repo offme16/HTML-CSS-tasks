@@ -18,15 +18,22 @@ console.log(extractDigits("2023 год"));
 console.log(extractDigits("1 каштан, 0.5 банана"));
 console.log(extractDigits("просто строка"));
 
-function addPadding(str, minLength, padding) {
-  if (str.length >= minLength) {
-    return str;
+function addPadding(string, minLength, addedCharacters) {
+  while (string.length < minLength) {
+    if (addedCharacters.length > minLength) {
+      addedCharacters = addedCharacters.slice(0, minLength - 1);
+      string = addedCharacters + string;
+    } else {
+      string =
+        (addedCharacters + string).length <= minLength
+          ? addedCharacters + string
+          : addedCharacters.slice(
+              0,
+              (addedCharacters + string).length - minLength
+            ) + string;
+    }
   }
-
-  let paddingCount = Math.ceil((minLength - str.length) / padding.length);
-  let pad = padding.repeat(paddingCount).slice(0, minLength - str.length);
-
-  return pad + str;
+  return string;
 }
 
 console.log(addPadding("1", 2, "0")); // Выведет '01'
