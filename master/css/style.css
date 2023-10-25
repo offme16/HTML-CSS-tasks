@@ -144,6 +144,29 @@ b{
     flex-wrap: wrap;
     gap: 20px 16px;
 }
+.portfolio-slider__images{
+    width: 103px;
+    height: 101px;
+    
+}
+.full img{
+    width: 820px;
+    height: 695px;
+}
+.portfolio button{
+    border: none;
+    cursor: pointer;
+}
+#prev-button{
+    position: relative;
+    top: -95px;
+    left: -60px;
+}
+#next-button{
+    position: relative;
+    top: -95px;
+    left: 779px;
+}
 .table h2{
     padding-left: 134px;
 }
@@ -205,6 +228,7 @@ b{
 
 .reviews h2{
     padding-left: 140px;
+    padding-top: 160px;
 }
 .reviews-images{
     display: flex;
@@ -257,3 +281,49 @@ b{
 li{
     list-style: none;
 }
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 300px;
+    height: 250px;    
+}
+.modal-content__form{
+ display: flex;
+ flex-direction: column;
+ gap: 10px; 
+ padding: 10px;  
+}
+input{
+    padding: 10px 16px;
+}
+.modal__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#closeModal{
+    padding: 8px 16px;
+    border: none;
+    background-color: #A1B29F;
+}
+.modal__button p{
+    color: #fff;
+}
+

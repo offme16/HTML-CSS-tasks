@@ -79,36 +79,22 @@
         </div>
     </section>
 
-    <section class="portfolio">
-        <div class="container">
+    <section class="portfolio container">
             <h2>Портфолио</h2>
             <div class="portfolio-slider">
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_06S(1).jpg" alt="img">
+                <div class="full">
+                    <img class="portfolio-slider__images" src="./master/images/IMG_06S(1).jpg" alt="img">
                 </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_5669S.jpg" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_5628S.png" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_5694S.png" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_5697S.png" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_606S  (2).png" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_60S.png" alt="img">
-                </div>
-                <div class="portfolio-slider__images">
-                    <img src="./master/images/IMG_6S(2).jpg" alt="img">
-                </div>
+                    <img src="./master/images/IMG_06S(1).jpg" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5669_2.png" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5822_2.png" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5628_2.png" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5697_2.png" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5778_2.png" class="portfolio-slider__images" alt="img">
+                    <img src="./master/images/IMG_5694_2.png" class="portfolio-slider__images" alt="img">
+                <button id="prev-button"><img src="./master/images/prev.png"></button>
+                <button id="next-button"><img src="./master/images/next.png"></button>
             </div>
-        </div>
     </section>
 
     <section class="table">
@@ -156,7 +142,7 @@
             </div>
             <h2>Оставьте заявку и мы с вами свяжемся</h2>
             <div class="reviews__bid">
-                <button class="reviews-bid__button">Оставить заявку</button>
+                <button id="openModal" class="reviews-bid__button">Оставить заявку</button>
             </div>
         </div>
     </section>
@@ -187,5 +173,18 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span>Свяжитесь с нами!</span>
+            <form class="modal-content__form" >
+                <input id="inputText" type="text" placeholder="Введите ваше имя">
+                <input id="inputTel" type="tel" placeholder="+7(XXX)-XXX-XX-XX">
+            </form>
+            <div class="modal__button">
+                <button id="closeModal"><p>Связаться</p></button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
