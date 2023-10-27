@@ -42,16 +42,27 @@ modalButtons.forEach((button) => {
 });
 
 const checkValue = () => {
-  if (inputText.value !== "" && inputTel.value !== "") {
+  const textValue = inputText.value;
+  const telValue = inputTel.value;
+
+  const textPattern = /^[a-zA-Zа-яА-Я\s]+$/;
+
+  const telPattern = /^\d+$/;
+
+  if (textPattern.test(textValue) && telPattern.test(telValue)) {
     return true;
   } else {
+    alert("Все поля должны быть заполнены правильно");
+    inputText.style.border = "2px solid red";
+    inputTel.style.border = "2px solid red";
     return false;
   }
 };
+
 closeModalBtn.addEventListener("click", function () {
-  checkValue()
-    ? (modal.style.display = "none")
-    : alert("Поля не должны быть пустыми!");
+  if (checkValue()) {
+    modal.style.display = "none";
+  }
 });
 
 window.addEventListener("click", function (event) {
