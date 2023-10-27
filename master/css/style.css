@@ -15,6 +15,9 @@ body{
     padding: 0;
     background-color:rgba(243, 239, 234, 1);
 }
+button{
+    cursor: pointer;
+}
 header a{
     color: #323232;
     font-family: 'Open Sans', sans-serif;

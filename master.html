@@ -23,7 +23,7 @@
                </ul>              
                <a href="./index.html"><div class="logo"><img src="./images/IMG_1024 1.svg" alt="logo"></div></a>
                <ul class="navigate-item">
-                <li><a href="#">Контакты</a></li>
+                <li><a id="openModallink" href="#">Контакты</a></li>
                <li class="navigate-item__link4"><a href="./about.html">О нас</a></li>
                </ul>                 
            </nav>
@@ -36,7 +36,7 @@
             <p>Воплотим вашу любую задумку в реальность</p>
             <h1>Столярная мастерская</h1>
             <h1 class="top-title__name">NIKASON BRAND</h1>
-            <button class="top__title-button">Заказать мебель</button>
+            <button id="openModall" class="top__title-button">Заказать мебель</button>
         </div>
      </div>
     </section>
@@ -178,7 +178,7 @@
             <span>Свяжитесь с нами!</span>
             <form class="modal-content__form" >
                 <input id="inputText" type="text" placeholder="Введите ваше имя">
-                <input id="inputTel" type="tel" placeholder="+7(XXX)-XXX-XX-XX">
+                <input id="inputTel" type="tel"  maxlength="11" minlength="11"  placeholder="+7(XXX)-XXX-XX-XX">
             </form>
             <div class="modal__button">
                 <button id="closeModal"><p>Связаться</p></button>

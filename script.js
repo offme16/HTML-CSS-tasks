@@ -25,23 +25,35 @@ pervBtn.addEventListener("click", () => {
 
 //modal-window
 const openModalBtn = document.getElementById("openModal");
+const openModalBtnF = document.getElementById("openModall");
+const openModalBtnL = document.getElementById("openModallink");
 const modal = document.getElementById("myModal");
 const closeModalBtn = document.getElementById("closeModal");
 const inputText = document.getElementById("inputText");
 const inputTel = document.getElementById("inputTel");
-openModalBtn.addEventListener("click", function () {
+
+const modalButtons = [openModalBtn, openModalBtnF, openModalBtnL];
+
+function openModal() {
   modal.style.display = "block";
+}
+modalButtons.forEach((button) => {
+  button.addEventListener("click", openModal);
 });
 
-closeModalBtn.addEventListener("click", function () {
-  const inputTex = inputText.value;
-  const inputNum = inputTel.value;
-  if (inputTex !== "" && inputNum !== "") {
-    modal.style.display = "none";
+const checkValue = () => {
+  if (inputText.value !== "" && inputTel.value !== "") {
+    return true;
   } else {
-    alert("Пол не должны быть пустыми!");
+    return false;
   }
+};
+closeModalBtn.addEventListener("click", function () {
+  checkValue()
+    ? (modal.style.display = "none")
+    : alert("Поля не должны быть пустыми!");
 });
+
 window.addEventListener("click", function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
